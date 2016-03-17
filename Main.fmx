@@ -11,16 +11,15 @@ object Form10: TForm10
   object Circle1: TCircle
     Align = Center
     Size.Width = 350.000000000000000000
-    Size.Height = 440.000000000000000000
+    Size.Height = 350.000000000000000000
     Size.PlatformDefault = False
     object Circle2: TCircle
       Align = Left
       Size.Width = 50.000000000000000000
-      Size.Height = 440.000000000000000000
+      Size.Height = 350.000000000000000000
       Size.PlatformDefault = False
       object Pie1: TPie
-        Position.X = 8.000000000000000000
-        Position.Y = 200.000000000000000000
+        Align = Center
         Size.Width = 33.000000000000000000
         Size.Height = 33.000000000000000000
         Size.PlatformDefault = False
@@ -29,10 +28,11 @@ object Form10: TForm10
       object FloatAnimation2: TFloatAnimation
         Enabled = True
         Duration = 1.000000000000000000
+        Inverse = True
         Loop = True
         PropertyName = 'RotationAngle'
         StartValue = 0.000000000000000000
-        StopValue = -360.000000000000000000
+        StopValue = 360.000000000000000000
       end
     end
     object FloatAnimation1: TFloatAnimation
