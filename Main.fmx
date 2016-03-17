@@ -1,0 +1,47 @@
+object Form10: TForm10
+  Left = 0
+  Top = 0
+  Caption = 'Form10'
+  ClientHeight = 440
+  ClientWidth = 402
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Align = Center
+    Size.Width = 350.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    object Circle2: TCircle
+      Align = Left
+      Size.Width = 50.000000000000000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      object Pie1: TPie
+        Position.X = 8.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        EndAngle = -90.000000000000000000
+      end
+      object FloatAnimation2: TFloatAnimation
+        Enabled = True
+        Duration = 1.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = 0.000000000000000000
+        StopValue = -360.000000000000000000
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      Enabled = True
+      Duration = 7.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+end
